@@ -1,0 +1,28 @@
+.product-capture { margin: 0; border: 1px solid #bfc8b6; border-radius: 4px; background: #f8fafc; overflow: hidden; }
+.capture-trigger { position: relative; display: block; width: 100%; padding: 0; border: 0; background: #f8fafc; cursor: zoom-in; }
+.capture-image { display: block; width: 100%; height: auto; }
+.capture-expand { position: absolute; right: 17px; bottom: 17px; display: inline-flex; gap: 9px; align-items: center; padding: 11px 15px; background: var(--green); color: var(--paper); border: 1px solid #ffffff55; border-radius: 3px; font-size: 11px; }
+.capture-trigger:hover .capture-expand { background: #2d5741; }
+.product-capture figcaption { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 22px; background: var(--paper); border-top: 1px solid var(--line); font-size: 11px; line-height: 1.6; }
+.product-capture figcaption > span { color: var(--muted); font-size: 10px; text-align: right; }
+.capture-dialog { position: fixed; inset: 0; width: min(1488px, calc(100% - 48px)); max-width: none; max-height: calc(100dvh - 48px); margin: auto; padding: 0; border: 1px solid #bfc8b6; border-radius: 5px; background: var(--paper); color: var(--ink); }
+.capture-dialog::backdrop { background: #0e231ee6; }
+.capture-dialog[open] { display: flex; flex-direction: column; }
+.capture-dialog-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 19px 24px; border-bottom: 1px solid var(--line); }
+.capture-dialog-heading h3 { font-size: 19px; font-weight: 600; letter-spacing: -.4px; }
+.capture-dialog-heading p { font-size: 11px; color: var(--muted); margin-top: 5px; }
+.capture-dialog-heading button { display: grid; place-items: center; width: 44px; height: 44px; flex-shrink: 0; border: 1px solid var(--line); border-radius: 3px; background: transparent; }
+.capture-dialog-heading button:hover { background: #e9ecdf; }
+.capture-dialog-scroll { overflow: auto; min-height: 0; overscroll-behavior: contain; }
+.capture-dialog-image { display: block; width: 100%; min-width: 1040px; height: auto; }
+.capture-dialog-hint { padding: 13px 24px; border-top: 1px solid var(--line); font-size: 10px; line-height: 1.7; color: var(--muted); }
+@media (max-width: 760px) {
+  .capture-expand { position: static; display: flex; justify-content: center; width: 100%; border: 0; border-radius: 0; padding: 13px; }
+  .product-capture figcaption { flex-direction: column; align-items: flex-start; gap: 8px; padding: 16px; font-size: 11px; }
+  .product-capture figcaption > span { text-align: left; font-size: 9px; }
+  .capture-dialog { width: calc(100% - 24px); max-height: calc(100dvh - 24px); }
+  .capture-dialog-heading { padding: 14px; gap: 12px; }
+  .capture-dialog-heading h3 { font-size: 16px; }
+  .capture-dialog-heading p { font-size: 10px; }
+  .capture-dialog-hint { padding: 12px 14px; font-size: 10px; }
+}
