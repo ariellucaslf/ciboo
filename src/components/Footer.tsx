@@ -1,0 +1,4 @@
+import Brand from './Brand';
+export default function Footer() {
+  return <footer className="site-footer"><div className="container"><div className="footer-main"><div><Brand /><p>Gestão que respeita a sua receita.<br />Cardápio, operação e controle para a sua casa.</p></div><nav aria-label="Navegação do rodapé"><a href="#demonstracao">Como funciona</a><a href="#recursos">Recursos</a><a href="#calculadora">Sua economia</a><a href="#planos">Planos</a><a href="#faq">Dúvidas frequentes</a><a href="https://app.ciboo.food/login">Entrar na plataforma ↗</a></nav></div><div className="footer-bottom"><p>© {new Date().getFullYear()} Ciboo / SuaVitrines Food.</p><a href="https://github.com/smart-wave-tech/ciboo/tree/feat/showcase-and-landing/docs" target="_blank" rel="noopener noreferrer">Conheça a engenharia do Ciboo ↗</a><span>Feito para quem alimenta boas histórias.</span></div></div></footer>;
+}
