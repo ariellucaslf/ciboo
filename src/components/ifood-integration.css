@@ -1,0 +1,24 @@
+.ifood-section { padding: 54px 0; border-top: 1px solid var(--line); background: #eeeade; scroll-margin-top: 100px; }
+.ifood-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 85px; align-items: center; }
+.ifood-inner > * { min-width: 0; }
+.ifood-heading { display: flex; align-items: center; gap: 17px; margin-bottom: 24px; }
+.ifood-original-logo { width: 76px; height: 43px; object-fit: contain; mix-blend-mode: multiply; }
+.ifood-heading > span { font-size: 8px; letter-spacing: 1.1px; line-height: 1.6; font-weight: 700; }
+.ifood-copy h2 { font-size: clamp(30px, 3.2vw, 41px); letter-spacing: -1.6px; line-height: 1.15; }
+.ifood-copy > p { margin-top: 21px; font-size: 13px; line-height: 1.85; color: #626c5d; max-width: 450px; }
+.ifood-copy .text-link { margin-top: 12px; }
+.ifood-flow-label { font: 9px/1.6 'Courier New', monospace; letter-spacing: .8px; }
+.ifood-flow ol { list-style: none; padding: 0; margin: 18px 0 0; }
+.ifood-flow li { display: flex; align-items: flex-start; gap: 20px; padding: 18px 0; border-top: 1px solid #c6cbbb; }
+.ifood-flow li > span { font: 10px/1.6 'Courier New', monospace; color: #727c65; padding-top: 2px; }
+.ifood-flow li strong { font-size: 15px; font-weight: 600; }
+.ifood-flow li p { color: #626c5d; font-size: 12px; line-height: 1.7; margin-top: 6px; }
+.ifood-contract-note { display: flex; align-items: flex-start; gap: 8px; color: #626c5d; font-size: 10px; line-height: 1.7; border-top: 1px solid #c6cbbb; padding-top: 17px; }
+.ifood-contract-note svg { flex-shrink: 0; margin-top: 2px; }
+@media (max-width: 760px) {
+  .ifood-section { padding-block: 45px; }
+  .ifood-inner { grid-template-columns: 1fr; gap: 30px; }
+  .ifood-heading { gap: 15px; }
+  .ifood-heading > span { font-size: 7px; }
+  .ifood-copy h2 { font-size: 31px; }
+}
